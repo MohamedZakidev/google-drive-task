@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gray-200: #F8FAFD;
+    --color-blue-200: #C2E7FF;
+}
+
+@layer base {
+    body {
+        @apply min-h-screen;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+}
+
+@layer components {
+    .grid-layout {
+        grid-template-rows: 70px 1fr;
+        grid-template-columns: 250px 1fr;
+        grid-template-areas:
+            "sidebar navbar"
+            "sidebar content";
+    }
+
+    .area-navbar {
+        grid-area: navbar;
+    }
+
+    .area-sidebar {
+        grid-area: sidebar;
+    }
+
+    .area-content {
+        grid-area: content;
+    }
+}
+
+@layer utilities {
+    .bg-primary {
+        @apply bg-gray-200;
+    }
+
+    .bg-active {
+        @apply bg-blue-200
+    }
+
+    .btn-shadow {
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .input-focus:focus {
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+        outline: none;
+        background-color: white;
+    }
+
+    .primary-paragraph {
+        @apply font-semibold text-gray-600;
+    }
+
+    .list-item-view {
+        @apply border-b border-gray-300 p-3
+    }
+
+    .filter-btn {
+        @apply border border-gray-400 py-1 px-4 rounded-xl flex items-center justify-between bg-white hover:bg-gray-300 capitalize font-semibold;
+    }
+}
