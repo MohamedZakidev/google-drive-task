@@ -1,6 +1,6 @@
 import { GoQuestion } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
-import SearchBar from "./ui/searchBar";
+import SearchBar from "./ui/SearchBar";
 
 function Navbar() {
     return (
