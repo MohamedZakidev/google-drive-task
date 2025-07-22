@@ -3,8 +3,8 @@ import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { CiGrid41 } from "react-icons/ci";
 import { IoIosMenu } from "react-icons/io";
 import DataView from "./DataView";
+import FileDetails from "./FileDetails";
 import TypeFilter from "./TypeFilter";
-import FileDetails from "./fileDetails";
 
 function DriveView() {
     const [viewStyle, setViewStyle] = useState("list")
